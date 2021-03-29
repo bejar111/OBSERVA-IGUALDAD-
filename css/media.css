@@ -242,6 +242,9 @@
   .oi-content-pop{
     min-height: auto;
   }
+  .item-partido-tabs{
+    width: 13%;
+  }
 
 
 }
@@ -261,7 +264,15 @@
   .oi-texto-seccion-nosotros h1{
     font-size: 35px;
   }
-  
+  .tab-link-subtab{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 @media (max-width: 500px) {
   .oi-banner-titulo {

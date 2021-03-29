@@ -1084,7 +1084,7 @@ select.form-control{
 /**/
 
 .oi-footer{
-	    background: #302C37;
+	background: #504d54;
     padding: 40px 15px;
     color: white;
     text-align: center;
@@ -1192,3 +1192,72 @@ select.form-control{
 .fw-600{
 	font-weight: 600;
 }
+.container-item-partidos{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item-partido-tabs{
+	padding: 6px;
+    background: white;
+    /* flex: 1; */
+    width: 7%;
+    margin-bottom: 15px;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+.item-partido-tabs.item-partido-active{
+	filter: inherit;
+}
+.item-partido-tabs img{
+	width: 100%;
+}
+.item-partido-tabs + .item-partido-tabs {
+	margin-left: 10px;
+}
+.content-info-tab{
+	display: none;
+}
+.content-info-tab.item-partido-active{
+	display: inherit;
+}
+.content-detalle-tabs-partidos{
+	margin-top: 40px;
+}
+
+.info-detalle-subtab img{
+	width: 100%;
+}
+.info-detalle-subtab{
+	display: none;
+	margin-top: 20px;
+
+}
+.info-detalle-subtab.subtab-active{
+	display: inherit;
+}
+.content-item-subtab{
+	display: flex;
+	justify-content: center;
+}
+.tab-link-subtab{
+	cursor: pointer;
+	color: 868484;
+	padding: 5px 12px;
+	margin: 12px;
+	border-bottom: 2px solid #868484;
+	font-weight: 500;
+	margin-top: 0;
+	line-height: 18px;
+}
+.tab-link-subtab.subtab-active{
+	color: #DC1125;
+	border-bottom: 2px solid #DC1125;
+}
+
+.icono-video{
+	width: 75px;
+	height: 75px;
+
+}
+	
