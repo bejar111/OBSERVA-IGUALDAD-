@@ -1,5 +1,13 @@
+var URL_WEB_OBSERVA_IGUALDAD='https://saednef.jne.gob.pe'; // URL Web Producción-SAE
+//var URL_WEB_OBSERVA_IGUALDAD='https://calsaednef.jne.gob.pe'; // URL Web CalidadS-SAE (solo cambiar para el entorno de pruebas)
+
+
 $( document ).ready(function() {
 	scrollBody();
+
+	var linkAcosoPolitico= URL_WEB_OBSERVA_IGUALDAD+"/AcosoPolitico/RegistroWeb_Acoso";
+	var linkAutoidentificate=URL_WEB_OBSERVA_IGUALDAD+"/autoidentificate/";
+	
 
 	$( ".cerrarPop" ).click(function() {
 	  	$(this).parents(".oi-fondo-pop-up").hide();
@@ -163,12 +171,9 @@ $( document ).ready(function() {
         }
     });
 
-		/*
-    $('#EnviarFormulario').click(function(){
-			$("#MensajeExitoFormAcoso").show();
-			scrollBody();
-	 });
-	 */
+
+    $(".linkAcosoPolitico").attr("href", linkAcosoPolitico);
+    $(".linkAutoidentificate").attr("href", linkAutoidentificate);
 
 
 });
